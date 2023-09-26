@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('git Checkout') {
             steps {
                 git branch: 'main', credentialsId: '<CREDS>', url: 'https://github.com/AlphaLaryBah/jenkinTerraformPipe'
             }
