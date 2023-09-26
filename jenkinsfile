@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git Checkout') {
             steps {
-                git branch: 'main', credentialsId: '<CREDS>', url: 'https://github.com/AlphaLaryBah/jenkinTerraformPipe'
+                git branch: 'main', credentialsId: 'zict2023', url: 'https://github.com/AlphaLaryBah/jenkinTerraformPipe'
             }
         }
         stage('Terraform init') {
